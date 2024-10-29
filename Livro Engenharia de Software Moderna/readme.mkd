@@ -1,0 +1,150 @@
+Livro: Engenharia de Software Moderna
+
+# Capítulo 1
+
+### Engenharia de Requisitos
+  - funcionais: o que um sistema deve fazer (funcionalidades e serviços)
+  - não funcionáis: como um sistema deve operar, sob quais restrições e com qual qualidade (desempenho, disponibilidade, tolerância a falhas, segurança, privacidade...)
+
+### Projeto de Software
+  São definidas as principais unidades de códigos, entretanto apenas no nível de interfaces.
+  - Interfaces providas: serviços que uma unidade de código tona público para uso pelo resto do sistema
+  - Interfaces requeridas: uma unidade de código depende para funcionar (dependência)
+
+    |class ContaBancaria {
+    |   private Cliente cliente;
+    |   private double saldo;
+    |   public double getSaldo() { ... }
+    |   public String getNomeCliente() { ... }
+    |   public String getExtrato (Date inicio) { ... }
+    |   ...
+    |}
+  "Quando o projeto é realizado em um nível mais alto e as unidades de código possuem maior granularidade — são pacotes, por exemplo — ele é classificado como um projeto arquitetural. 
+   Ou seja, arquitetura de software trata da organização de um sistema em um nível de abstração mais alto do que aquele que envolve classes ou construções semelhantes."
+
+### Construção de Software
+  "Nesse momento, existem diversas decisões que precisam ser tomadas, como, por exemplo: 
+    - definir os algoritmos e estruturas de dados que serão usados, 
+    - definir os frameworks e bibliotecas de terceiros que serão usados; 
+    - definir técnicas para tratamento de exceções; 
+    - definir padrões de nomes, 
+    - leiaute e documentação de código
+
+   e, por último, mas não menos importante, 
+    - definir as ferramentas que serão usadas no desenvolvimento, 
+    - incluindo compiladores, 
+    - ambientes integrados de desenvolvimento (IDEs), 
+    - depuradores, 
+    - gerenciadores de bancos de dados, 
+    - ferramentas para construção de interfaces, etc."
+
+### Teste de Software
+  Tipos de teste
+   - unidade: quando se testa uma pequena unidade do código, como uma classe ou método
+   - integração: quando se testa uma unidade de mais granularidade, como um conjunto de classes
+   - performance: quando se submete o sistema a uma carga de processamento para verificar seu desempenho
+   - usabilidade: quando o objeto é verificar a usabilidade da interface do sistema
+
+  Testes podem ser usados tanto para verificação quanto para validação de sistemas
+   - veriicação: estamos implementando o sistema corretamente? De acordo com seus requisitos.
+   - validação: estamos implementando o sistema correto? Aquele que os clientes ou o mercado está querendo.
+
+### Manutenção e Evolução de Software
+  Tipos de manutenção
+   - corretiva: corrigir bugs reportados por usuário ou outros desenvolvedores
+   - preventiva: corrigir bugs latentes no código, que ainda nao causaram falhas junto aos usuários do sistema
+   - adaptatva: adaptar um sistema a uma mudança em seu ambiente, incluindo tecnologia, legislação, regras de integração com outros sistemas ou demandas de novos clientes
+   - refactoring: modificações realizadas em um software preservando seu comportamento e visando exclusivamente a melhoria de seu código ou projeto
+   - evolutiva: incluir uma nova funcionalidade ou introduzir aperfeiçoamentos importantes em funcionalidades existentes
+
+### Gerência de Configuração
+  Inclui a definição de um conjunto de políticas para gerenciar as diversas versões de um sistema. 
+  - Versionamento semântico: utilização de padrões para a versão do software (x.y.z)
+    - modificações em z são chamados de patchs e ocorrem por correções pequenas de bugs
+    - modificações em y são chamadas de minor e ocorrem pela implementação de pequenas funcionalidades
+    - modificações em x são chamadas de major e ocorrem pela implemetação de funcionalidades muito diferentes das existentes
+
+### Gerência de Projetos
+  - Stakeholder: as partes interessadas no projeto, são afetados ou afetam o projeto
+  - Lei de Brooks: "A inclusão de novos desenvolvedores em um projeto que está atrasado contribui para torná-lo ainda mais atrasado"
+
+### Processos de Desenvolvimento de Software
+  Tipos e processos
+    - Waterfall (cascata)
+    - Ágeis (incrementais ou iterativos)
+      - Métodos ágeis: XP, Scrum, Kanban e Lean Development
+        - Os métodos ágeis ajudaram a disseminar diversas práticas de desenvolvimenoto como testes automatizados, test-driven development e continuous integration
+
+### Modelos de Software
+  - Oferece uma representação em mais alto nível de um sistema do que o seu código fonte.
+  - Permitir que desenvolvedores possam analisar propriedades e características essenciais de um sistema, de modo mais fácil e rápido, sem ter que visualizar o código em si.
+  - Ex: UML (diagrama de classes)
+
+### Qualidade de Software
+  - Qualidade externa
+    - considera fatores que podem ser aferidos sem analisar o código, podendo ser avaliada mesmo por usuários comuns. 
+     - Correção: o software atende à sua especificação? Nas situações normais, ele funciona como esperado?
+     - Robustez: o software continua funcionando mesmo quando ocorrem eventos anormais como uma falha de comunicação ou disco?
+     - Eficiência: o software faz bom uso de recursos computacionais?
+     - Portabilidade: é possível portar esse software em outras plataformas e so?
+     - Facilidade de uso: o software possui uma interface amigável, mensagens de erro claras, suporta mais de uma língua?
+     - Compatibilidade: o software é compatível com os principal formatos de dados de sua área? (xls, csv)
+
+  - Qualidade interna
+    - Considera propriedades e características relacionadas com a implementação de um sistema podendo ser avaliada somente por um especialista em Engenharia de Software
+    - Os atributos a serem medidos a respeito da qualidade do software é a modularidade, legibilidade, manutenabilidade e testabilidade
+    - Uma as maneiras de garantir a qualidade interna do código é a revisão de código de um programador A no código do programado B
+
+### Prática Profissional
+  - Código de ética
+
+### Aspectos Econômicos
+  - Precificação de sistemas (licença ou anúncio)
+  - Corrigir bug (manter carteira de clientes) X Desenvolver novas funcionalidades (expandir carteira de clientes)
+
+### Classificação de Sistemas de Software
+  - Acute
+    - Sistemas críticos aos quais qualquer falha que seja encontrada pode causar imenso prejuízo, podendo incluir a perda de vidas humanas.
+    - Pode ser usado redundancia não apenas de hardware mas também de software, no caso uma decisão só será tomada se o conjuntos de maquinas rodando o software retornarem a mesma decisão
+  - Business
+    - Sistemas de modo geral que são utilizados e comercializados
+  - Casuais
+    - Sistemas pequenos e não críticos que normalmente são desenvolvidor por poucas pessoas e que normalmente contêm alguns bugs
+
+# Capítulo 2
+
+### Importância de Preocessos
+  - Processos de software são importântes desde que utilizados em equipes de desenvolvedores que desenvolvem software mais complexos
+  - Processos servem para coordenar, motivar, organizar e avaliar o trabalho de seus desenvolvedores 
+  - Garantindo que os desenvolvedores trabalhem com produtividade e produza sistemas alinhados com os objetivos da organização
+
+### Manidesto Ágil
+  - Modelo Waterfall
+    - Os processos iniciais de desenvolvimento de software baseavam-se em engenharias já existentes na época e que eram totalmente sequenciais
+    - As fases do desenvolvimento eram mas não se limitavam a: especificação de requisitos, implementação, testes e manutenção do sistema
+    - Todas as etapas geravam documentações detalhadas do produto
+
+  - Em 2001, um grupo de profissioais se reuniu em Snowbird, estado de Utah, para discutir e propor uma alternativa aos processos do tipo Waterfall
+    - Reconheceram que os requisitos de um software mudam com frequência, logo é possível projetar por anos e quando pronto não ser mais necessário ou não possuir uma adesão ao processo levantado
+    - As documentações geradas nos processos waterfall se desatualizavam rapidamente visto que os desenvolvedores não as atualizavam após mudanças no sistema
+
+  - Manifesto Ágil
+    Cadascterísticas fundamentais do ágil
+    - Indivíduos e interações maior que processos e ferramentas
+    - Software em funcionamento maior que documentação abrangente
+    - Colaboração com o cliente maior que negociação de contratos
+    - Resposta a mudanças maior que seguir um plano
+
+    Outras características atuais
+    - Menor ênfase em documentação
+    - Menor ênfase em planos detalhados
+    - Inexistência de uma fase dedicada a design
+    - Desenvolvimento em times pequenos
+    - Programação em pares, testes automatizados e integração contínua
+
+    - Ciclos curtos e iterativos de desenvolvimento (um mês ou menos)
+      - É implementado o que o cliente mais necessita de urgente primeiro
+
+### Extreme Programming
+  - XP é um método leve recomentado para desenvolver software com requisitos vagos ou sujeitos a mudanças
+  - XP não é um método que define um passo a passo, em vez disso ele é definido por um conjunto de valores, princípios e práticas de desenvolvimento
