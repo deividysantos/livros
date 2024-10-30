@@ -148,3 +148,28 @@ Livro: Engenharia de Software Moderna
 ### Extreme Programming
   - XP é um método leve recomentado para desenvolver software com requisitos vagos ou sujeitos a mudanças
   - XP não é um método que define um passo a passo, em vez disso ele é definido por um conjunto de valores, princípios e práticas de desenvolvimento
+
+  - Valores
+    - *comunicação: é de conhecimento geral a importância da comunicação;
+    - *simplicidade: manter o códido simples é importânte para a legibilidade e manutenabilidade de um software;
+    - *feedback: estar apto e aberto a receber feedbacks é importante visto que é uma forma barata e fácil de manter a evolução tanto do projeto quanto pessoal;
+    - coragem,
+    - respeito,
+    - qualidade de vida
+
+  - Princípios
+    - humanidade: software utiliza de uma grande quantidade de capital humano, sendo assim é importante que se tenha uma boa gestão de pessoas; 
+    - economicidade: software não é uma obra de arte, é necessário garantir que o que é escrito gere valor para o cliente;
+    - benefícios mútuos: basicamente o título, é necessário gerar cenários de benefício mútuo por exemplo: um dev A escreve testes que por sua vez são utilizados por um dev B que dá manutenção e tem a segurança de faze-lo;
+    - melhorias contínuas,
+    - falhas acontecem,
+    - baby steps,
+    - responsabilidade pessoal
+
+  - Práticas sobre o Processo de Desenvolvimento
+    - representante dos clientes, histórias dos usuários, iterações, releases, planejamento de releases, planejamento de iterações, planning poker, slack
+  - Prátcas de programação
+    - design incremental, programação pareada, desenvolvimento dirigido por testes, build automatizado, integração contínua
+  - Práticas de Gerenciamento de Projetos
+    - métricas, amiente de trabalho, contratos com escopo abertos
+    
