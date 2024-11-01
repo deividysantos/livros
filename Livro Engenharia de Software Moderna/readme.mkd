@@ -161,10 +161,10 @@ Livro: Engenharia de Software Moderna
     - humanidade: software utiliza de uma grande quantidade de capital humano, sendo assim é importante que se tenha uma boa gestão de pessoas; 
     - economicidade: software não é uma obra de arte, é necessário garantir que o que é escrito gere valor para o cliente;
     - benefícios mútuos: basicamente o título, é necessário gerar cenários de benefício mútuo por exemplo: um dev A escreve testes que por sua vez são utilizados por um dev B que dá manutenção e tem a segurança de faze-lo;
-    - melhorias contínuas,
-    - falhas acontecem,
-    - baby steps,
-    - responsabilidade pessoal
+    - melhorias contínuas: Não se deve investir grande tempo em um design inicial e completo, em vez disso o design do sistema pode ser incremental, melhorando a cada iteração;
+    - falhas acontecem: software é uma atividade de construção humana e humanos estão suscetíveis a falhas, logo não se deve punir um membro do time por errar mas as falhas também não devem ser acobertadas;
+    - baby steps: É melhor um progesso seguro, testado e validado, mesmo que pequeno, do que grandes implementações com riscos de serem descartadas;
+    - responsabilidade pessoal: os desenvolvedores devem ter uma ideia clara de seu papel e responsabilidade na equipe;
 
   - Práticas sobre o Processo de Desenvolvimento
     - representante dos clientes, histórias dos usuários, iterações, releases, planejamento de releases, planejamento de iterações, planning poker, slack
