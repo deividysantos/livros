@@ -167,8 +167,23 @@ Livro: Engenharia de Software Moderna
     - responsabilidade pessoal: os desenvolvedores devem ter uma ideia clara de seu papel e responsabilidade na equipe;
 
   - Práticas sobre o Processo de Desenvolvimento
-    - representante dos clientes, histórias dos usuários, iterações, releases, planejamento de releases, planejamento de iterações, planning poker, slack
-  - Prátcas de programação
+    - representante dos clientes, 
+      - deve entender do domínio do sistema que será constrído, é o responsável por escrever as histórias dos usuários
+    - histórias dos usuários, 
+      - nome que XP dá para os documentos que descrevem os requisitos do sistema a ser implementados, essas histórias são documentos resumidos, com apenas duas ou três sentenças
+    - planning poker, 
+      - técnica usada para estimar o tamanho das histórias: o representante dos clientes lê a história para os desenvolvedores, após os desenvolvedores questionam o representante a fim de sanar dúvidas
+        ao terem as dúvidas sanadas cara desenvolvedor dá uma pontuação para a história, caso não haja consenso os desenvolvedores distutem entre si a fim de votar novamente e terem uma nova pontuação
+    - iterações,
+       - a implementação das histórias ocorre em iterações as quais têm uma duração fixa e bem definida, variando de uma a três semanas. as iterações formam ciclos mais longos chamados de releases
+    - releases, 
+      - conjunto de iterações com período de dois a três meses onde o representante do cliente irá listar histórias que possam ocupar uma release
+    - planejamento de releases (planning game), 
+      - o representante do cliente deve priorizar as histórias, para isso, ele deve definir quais histórias serão implementadas nas iterações da primeira release
+    - planejamento de iterações, 
+    - slack
+
+  - Práticas de programação
     - design incremental, programação pareada, desenvolvimento dirigido por testes, build automatizado, integração contínua
   - Práticas de Gerenciamento de Projetos
     - métricas, amiente de trabalho, contratos com escopo abertos
