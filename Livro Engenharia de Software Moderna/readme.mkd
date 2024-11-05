@@ -167,7 +167,7 @@ Livro: Engenharia de Software Moderna
     - responsabilidade pessoal: os desenvolvedores devem ter uma ideia clara de seu papel e responsabilidade na equipe;
 
   - Práticas sobre o Processo de Desenvolvimento
-    - representante dos clientes, 
+    - representante dos clientes (user proxy), 
       - deve entender do domínio do sistema que será constrído, é o responsável por escrever as histórias dos usuários
     - histórias dos usuários, 
       - nome que XP dá para os documentos que descrevem os requisitos do sistema a ser implementados, essas histórias são documentos resumidos, com apenas duas ou três sentenças
@@ -181,10 +181,39 @@ Livro: Engenharia de Software Moderna
     - planejamento de releases (planning game), 
       - o representante do cliente deve priorizar as histórias, para isso, ele deve definir quais histórias serão implementadas nas iterações da primeira release
     - planejamento de iterações, 
-    - slack
+      - as iterações são organizadas conforme a velocidade do time, ou seja, quantos story points o time consegue resolver em uma iteração
+      - ao planejar a iteração o time de desenvolvimento deverá decompor as historias em tarefas as quais devem corresponder a atividade de programação que possam ser alocadas para um dos desenvolvedores do time
+      - a iteração termina quando as histórias definidas para a iteração tiverem sido terminada e, assim, são mostradas ao representante do cliente para validação
+    - slack (folgas)
+      - são tarefas que podem ser adiadas caso necessário
+        - estudar uma nova tecnologia, 
+        - realização de um curso online,
+        - preparar uma documentação ou manual,
+        - desenvolver um projeto paralelo
+      - objetivos das folgas
+        - criar um buffer de segurança em uma iteração que possa ser usado caso alguma tarefa demande mais tempo do que o previsto
+        - permitir que os desenvolvedores respirem um pouco
 
   - Práticas de programação
-    - design incremental, programação pareada, desenvolvimento dirigido por testes, build automatizado, integração contínua
+    - design incremental,
+      -  o design não deve ser realizado apenas no início do projeto e quando ele se revelar importante
+      - "faça a coisa mais simples que possa funcionar" (do the simplest thing that could possibly work)
+      - "você não vai precisar disso" (you aren't going to neet it)
+      - é compreendido pelo XP que a refatoração do código e do design devem ser feitas sempre que existir a possibilidade
+    - programação em pares, 
+      - toda atividade de codificação deve ser realizada por dois desenvolvedores que compartilham o mesmo teclado e mouse
+      - um dos desenvolvedores é o líder (driver), ficando com o teclado e mouse
+      - o segundo desenvolvedor é chamado de navegador
+      - "duas cabeças pensam mais que uma"
+      - compartilhamento de conhecimento sobre as tecnologias e também sobre o sistema em si
+      - a cada 50 min deverá ser invertida a posição dos desenvolvedores com um tempo de descanso entre as sessões
+      - atualmente muitas empresas passaram a adotar a prática de revisão de código, a ideia é que todo código produzido por um desenvolvedor tem que ser revisado e comentado por outro de forma offline e assíncrona
+    - propriedade coletiva do código,
+      - todo desenvolvedor pode modificar o código que quiser/precisar para melhorias, correção de bugs e refatorações
+      - em minha opnião isso funciona apenas e somente quando se tem testes garantindo que o comportamento do código será corretamente mantido
+    - desenvolvimento dirigido por testes (TDD),
+    - build automatizado, 
+    - integração contínua
   - Práticas de Gerenciamento de Projetos
     - métricas, amiente de trabalho, contratos com escopo abertos
     
