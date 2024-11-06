@@ -169,21 +169,28 @@ Livro: Engenharia de Software Moderna
   - Práticas sobre o Processo de Desenvolvimento
     - representante dos clientes (user proxy), 
       - deve entender do domínio do sistema que será constrído, é o responsável por escrever as histórias dos usuários
+    
     - histórias dos usuários, 
       - nome que XP dá para os documentos que descrevem os requisitos do sistema a ser implementados, essas histórias são documentos resumidos, com apenas duas ou três sentenças
+        
     - planning poker, 
       - técnica usada para estimar o tamanho das histórias: o representante dos clientes lê a história para os desenvolvedores, após os desenvolvedores questionam o representante a fim de sanar dúvidas
         ao terem as dúvidas sanadas cara desenvolvedor dá uma pontuação para a história, caso não haja consenso os desenvolvedores distutem entre si a fim de votar novamente e terem uma nova pontuação
+        
     - iterações,
        - a implementação das histórias ocorre em iterações as quais têm uma duração fixa e bem definida, variando de uma a três semanas. as iterações formam ciclos mais longos chamados de releases
+        
     - releases, 
       - conjunto de iterações com período de dois a três meses onde o representante do cliente irá listar histórias que possam ocupar uma release
+        
     - planejamento de releases (planning game), 
       - o representante do cliente deve priorizar as histórias, para isso, ele deve definir quais histórias serão implementadas nas iterações da primeira release
+        
     - planejamento de iterações, 
       - as iterações são organizadas conforme a velocidade do time, ou seja, quantos story points o time consegue resolver em uma iteração
       - ao planejar a iteração o time de desenvolvimento deverá decompor as historias em tarefas as quais devem corresponder a atividade de programação que possam ser alocadas para um dos desenvolvedores do time
       - a iteração termina quando as histórias definidas para a iteração tiverem sido terminada e, assim, são mostradas ao representante do cliente para validação
+        
     - slack (folgas)
       - são tarefas que podem ser adiadas caso necessário
         - estudar uma nova tecnologia, 
@@ -200,6 +207,7 @@ Livro: Engenharia de Software Moderna
       - "faça a coisa mais simples que possa funcionar" (do the simplest thing that could possibly work)
       - "você não vai precisar disso" (you aren't going to neet it)
       - é compreendido pelo XP que a refatoração do código e do design devem ser feitas sempre que existir a possibilidade
+        
     - programação em pares, 
       - toda atividade de codificação deve ser realizada por dois desenvolvedores que compartilham o mesmo teclado e mouse
       - um dos desenvolvedores é o líder (driver), ficando com o teclado e mouse
@@ -208,12 +216,35 @@ Livro: Engenharia de Software Moderna
       - compartilhamento de conhecimento sobre as tecnologias e também sobre o sistema em si
       - a cada 50 min deverá ser invertida a posição dos desenvolvedores com um tempo de descanso entre as sessões
       - atualmente muitas empresas passaram a adotar a prática de revisão de código, a ideia é que todo código produzido por um desenvolvedor tem que ser revisado e comentado por outro de forma offline e assíncrona
+        
     - propriedade coletiva do código,
       - todo desenvolvedor pode modificar o código que quiser/precisar para melhorias, correção de bugs e refatorações
       - em minha opnião isso funciona apenas e somente quando se tem testes garantindo que o comportamento do código será corretamente mantido
-    - desenvolvimento dirigido por testes (TDD),
+    
+    - testes automatizados,
+      - anteriormente os testes eram feitos manualmente por humanos inserindo entradas e verificando as saídas do sistema
+      - entretando essa abordagem é custosa e não é possível "rodar" os testes a todo momento garantindo que as entradas sejam as mesmas
+      - testes automatizados são programas que rodam verificando o código/interface de maneira padronizada garantindo sempre as mesmas entradas e validando corretamente as saídas
+    
+    - desenvolvimento dirigido por testes (TDD) (teste-frist programming),
+      - se em XP todo método deve possuir testes, por que não escrevê-los primeiro?
+      - motivações
+        - evitar que a escrita de testes seja sempre deixada para amanhã
+        - ao escrever um teste, o desenvolvedor se coloca no papel do cliente do método testados, ele pensa inicialmente na sua interface e como o cliente deve usá-lo
+
     - build automatizado, 
+      - build é o nome que se dá para a geração de uma versao de um sistema que seja executável e que possa ser colocada em produção
+      - inclui compilação do código, execução de otras ferramentas como linkeditores e empacoadores de código
+      - para o XP, a execução dos testes é outra etapa fundamental do processo de build
+      - objetivo principal é liberar desenvolvedores para gerar mais valor desenvolvendo histórias
+        
     - integração contínua
+      - objetivo da integração contínua é a redução de conflitos entre desenvolvedores
+      - para isso recomenda-se justamente a integração contínua, todos os dias, para que os desenvolvedores trabalhem o menos possível localmente em suas máquinas
+      - serviços de integração contínua auxiliam nesse processo rodando scripts e testes antes de casa integração para garantir que não existirão erros de compilação ou outros erros de regra de negócio
+
   - Práticas de Gerenciamento de Projetos
-    - métricas, amiente de trabalho, contratos com escopo abertos
+    - amiente de trabalho,
+    - métricas, 
+    - contratos com escopo abertos
     
