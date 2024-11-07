@@ -245,6 +245,16 @@ Livro: Engenharia de Software Moderna
 
   - Práticas de Gerenciamento de Projetos
     - amiente de trabalho,
-    - métricas, 
-    - contratos com escopo abertos
-    
+      - times pequenos de até 10 desenvolvedores mútuos,
+      - jornada de trabalho padrão de 40 horas e sem horas extras e prazos apertados ao final de projetos com entregas próximas
+
+    - contratos com escopo aberto,
+      - em casos de empresas terceirizarem o desenvolvimento é indicado pela XP firmar um contrato de escopo aberto visando a maior facilidade de mudança por parte de ambas as empresas
+      - os requisitos podem mudar, o que a empresa contratante quer pode mudar e caso o serviço não esteja sendo prestado de maneira satisfatória pode-se ainda trocar de empresa terceirizada mais facilmente
+      - normalmente são contratos firmados em horas de desenvolvimento
+
+    - métricas,
+      - para que os gerentes e executivos possam acompanhar um projeto XP recomenda-se o uso de duas métricas
+        - número de bugs em produção (que deve ser idealmente da ordem de poucos bugs por ano)
+        - intervalo de tempo entre o início do desenvolvimento e o momento em que o projeto começar a gerar os seus primeiros resultados financeiros
+### Scrum
