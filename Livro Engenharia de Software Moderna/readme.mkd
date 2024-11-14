@@ -258,3 +258,35 @@ Livro: Engenharia de Software Moderna
         - número de bugs em produção (que deve ser idealmente da ordem de poucos bugs por ano)
         - intervalo de tempo entre o início do desenvolvimento e o momento em que o projeto começar a gerar os seus primeiros resultados financeiros
 ### Scrum
+  - É um método ágil, iterativo e incremental para gerenciamento de projetos.
+
+  - Scrum vs XP
+    - XP é um método ágil voltado exclusivamente para projetos de desenvolvimento de software. Para isso, XP inclui um conjunto de práticas de programação
+      - testes de unidade, programação em pares, integração contínua e design incremental
+    - Scrum é um método ágil para gerenciamento de projetos, que não necessariamente precisam ser projetos de desenvolvimeno de software.
+
+  - Scrum é também aquele que é melhor definido. Essa definição inclui um conjunto preciso de papéis, artefatos e eventos
+    - papéis (times scrum são formados por un Product Owner, scrum master e de três a nove desenvolvedores)
+      - dono do produto,
+        - exatamente o mesmo papel do representante dos clientes em xp
+        - como o próprio nome indica, deve possuir a visão do produto que será costruído, sendo responsável também por maximizar o retorno do investimento no projeto
+        - Como em XP, cabe ao dono do produto escrever as histórias dos usuários e, por isso, ele deve estar sempre disponível para tirar dúvidas do time
+
+      - scrum master,
+        - especialista em Scrum do time, responsável por garantir que as regras do métodos sejam seguidas
+        - deve treinar e explicar os princípios de scrum para os demais membros do time
+        - deve desempenhar funções de um facilitador dos trabalhos e removedor de impedimentos
+        - costuma-se dizer que times.... continua
+
+      - desenvolvedor
+    - artefatos
+      - backlog do produto,
+      - backlog do sprint,
+      - quadro scrum,
+      - gráfico de burndown
+    - eventos
+      - planejamento da sprint,
+      - sprint,
+      - reuniões diárias,
+      - revisão do sprint,
+      - retrospectiva
