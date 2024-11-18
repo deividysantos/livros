@@ -276,17 +276,41 @@ Livro: Engenharia de Software Moderna
         - especialista em Scrum do time, responsável por garantir que as regras do métodos sejam seguidas
         - deve treinar e explicar os princípios de scrum para os demais membros do time
         - deve desempenhar funções de um facilitador dos trabalhos e removedor de impedimentos
-        - costuma-se dizer que times.... continua
+        - costuma-se dizer que times scrum sãos cross-funcionais, devem possuir todos os especialistas necessários para desenvolver o produto sem depender de membros externos
+          - front-end, back-end, especialista em banco de dados, projetistas de interface etc
 
-      - desenvolvedor
     - artefatos
       - backlog do produto,
+        - lista de histórias (e outros itens de trabalho relevantes), ordenada por prioridades
+        - deve ser continuamente atualizado, de forma a refletir mudanças nos requisitos e na visão do produto
+        - a priorização das atividades devem ser feitas pelo dono do produto
+
       - backlog do sprint,
+        - artefato gerado ao final do planejamento do sprint
+        - lista com as tarefas do sprint, bem como a inclui a duração das mesmas
+        - também é dinâmico assim como o backlog do produto
+        - algumas tarefas podem se mostrar desnecessárias e outras podem sugir ao longo do sprint, como também é possível alterar a estimativa de horas
+        - o que não pode ser alterado é o objetivo do sprint, ou seja, a lista de histórias que o dono do produto selecionou para o sprint
+        - scrum é um método adaptável a mudanças, mas desde que elas ocorram entre sprints, ou seja, no time-box de um sprint a equipe de desenvolvimento deve ter tranquilidade e segurança para trabalhar em uma lista fechada de histórias
+
       - quadro scrum,
       - gráfico de burndown
+
     - eventos
       - planejamento da sprint,
+        - reunião na qual todo o time se reúne para decidir as histórias que serão implementadas no sprint que vai se iniciar
+        - evento que marca o início de um sprint
+        - dividida em duas partes:
+          - primeira parte: comandada pelo dono do produto, onde o mesmo proprôe histórias para o sprint e o restante do time decide se tem velocidade para implementá-las
+          - segunda parte: comandada pelos desenvolvedores, onde os mesmos quebram as histórias em tarefas e estimam a duração delas
+            - o dono do produto deve permanecer presente para tirar dúvidas sobre as histórias
+            - pode-se decidir cancelar uma história, pois ela se revelou mais complexa ao ser quebrada em tarefas
+
       - sprint,
+        - nome dados pelo scrum para uma iteração,
+        - tempo máximo de até um mês
+        - o resultado de uma sprint é chamado de produto potencialmente pronto para entrar em produção (mas não obrigatória)
+
       - reuniões diárias,
       - revisão do sprint,
       - retrospectiva
