@@ -259,6 +259,8 @@ Livro: Engenharia de Software Moderna
         - intervalo de tempo entre o início do desenvolvimento e o momento em que o projeto começar a gerar os seus primeiros resultados financeiros
 ### Scrum
   - É um método ágil, iterativo e incremental para gerenciamento de projetos.
+  - todos os eventos scrum possuem uma duração bem definida, isso é chamado de time-box da atividade
+  - o objetivo do time-box é criar um fluxo contónuo de trabalho, bem como fomentar o compromisso da equipe com o sucesso do sprint e evitar a perda de foco
 
   - Scrum vs XP
     - XP é um método ágil voltado exclusivamente para projetos de desenvolvimento de software. Para isso, XP inclui um conjunto de práticas de programação
@@ -294,7 +296,13 @@ Livro: Engenharia de Software Moderna
         - scrum é um método adaptável a mudanças, mas desde que elas ocorram entre sprints, ou seja, no time-box de um sprint a equipe de desenvolvimento deve ter tranquilidade e segurança para trabalhar em uma lista fechada de histórias
 
       - quadro scrum,
+        - quadro que dispõe das tarefas a fazer, em andamento e finalizadas (trello basicamente)
+        - dá visibilidade ao progresso do time e permite mais facilmente o monitoramento das entregas a fim de garantir se os critérios para finalizar a tarefa foram cumpridos
+        - esses critérios podem ser a escrita de testes de unidade seguido de uma revisão do código por outro desenvolvedor e o código estar integrado ao projeto versionado
+
       - gráfico de burndown
+        - mostra quantas horas são necessárias para se implementar as tarefas que ainda não está concluídas
+        - no dia X do sprint ele informa que restam tarefas a implementar que somam Y horas
 
     - eventos
       - planejamento da sprint,
@@ -312,5 +320,21 @@ Livro: Engenharia de Software Moderna
         - o resultado de uma sprint é chamado de produto potencialmente pronto para entrar em produção (mas não obrigatória)
 
       - reuniões diárias,
+        - devem ter no máximo 15 minutos
+        - todos os membros do time devem participar
+        - idealmente essas reuniões eram para ser realizadas em pé (standup meetings ou daily scrum)
+        - devem ser respondidas 3 perguntas
+          - o que foi feito no dia anterior?
+          - o que pretende fazer no dia corrente?
+          - está enfrentando algum problema que é um impedimento na sua tarefa?
+        - objetiva melhorar a comunicação entre os membros do time, fazendo com que eles compartilhem e socializem o andamento do projeto
+
       - revisão do sprint,
+        - reunião para mostrar os resultados de um sprint
+        - devem participar todos os membros do time e idealmente outros stakeholders, convidados pelo dono do produto, que estejam envolvidos com o resultado do sprint
+        - o time demonstrará, ao vivo, o produto para os clientes
+        - como resultado o dono do produto aprovas as histórias implementadas
+        - caso o dono do produto encontre algum problema em alguma história ela deverá voltar ao backlog para ser retrabalhada 
+
       - retrospectiva
+        - reunião do time scrum com o objetivo de refletir sobre o sprint que está terminando e, se possível, identificar pontos de melhorias no processo, nas pessoas, nos relacionamentos e nas ferramentas usadas
